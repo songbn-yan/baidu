@@ -1,0 +1,774 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: "微软雅黑";
+  color: #666;
+  font-weight: 500;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #a6b6c6;
+  text-decoration: none;
+}
+
+#section-0 {
+  background: url(../image/bg-0_yuqing.jpg) center top repeat;
+}
+
+#section-1 {
+  background: url(../image/bg-1_yuqing.jpg) center top repeat;
+}
+
+#section-2 {
+  background: url(../image/bg-2_yuqing.jpg) center top repeat;
+}
+
+#section-3 {
+  background: url(../image/bg-3_yuqing.jpg) center top repeat;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  background: #168bd8;
+}
+
+#header .nav {
+  width: 1000px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+.fl-yuqing {
+  float: left;
+}
+
+.nav .logo-yuqing {
+  background: url(../image/header_yuqing.png) -2px 0 no-repeat;
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+}
+
+.nav .nav-list {
+  margin-left: 60px;
+}
+
+.nav-item {
+  position: relative;
+  list-style-type: none;
+  display: list-item;
+}
+
+.nav-link {
+  display: inline-block;
+  width: 100px;
+  font-size: 15px;
+  height: 28px;
+  padding-top: 32px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #67cbff;
+}
+
+.help-yuqing {
+  float: right;
+  margin-top: 25px;
+}
+
+.help-yuqing a {
+  color: #fff;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.help-yuqing a.yellow {
+  color: #d8f112;
+}
+
+.nav-app i {
+  background: url(../image/header_yuqing.png) -88px -154px no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 25px;
+}
+
+.section .top, .section .bottom, .section .middle, .section .follow-head, .bg-cloud-1, .bg-cloud-2, .bg-cloud-3 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.section .top {
+  top: 0;
+}
+
+.section .bottom {
+  bottom: 0;
+}
+
+.section .middle {
+  top: 50%;
+}
+
+.section .center {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section .follow-head {
+  bottom: 0;
+}
+
+.bg-cloud-1 {
+  top: 0;
+  height: 1000px;
+  background: url(../image/cloud_1_yuqing.png) repeat;
+}
+
+.bg-cloud-2 {
+  top: -200px;
+  height: 400px;
+  background: url(../image/cloud_2_yuqing.png) repeat;
+}
+
+.bg-cloud-3 {
+  bottom: 0;
+  height: 400px;
+  background: url(../image/cloud_3_yuqing.png) repeat;
+}
+
+@keyframes cloudmove {
+  0% {
+    background-position: 2000px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2000px 0;
+  }
+}
+
+.active .bg-cloud-1 {
+  animation: cloudmove 100s linear infinite;
+}
+
+.active .bg-cloud-2 {
+  animation: cloudmove 280s linear infinite;
+}
+
+.active .bg-cloud-3 {
+  animation: cloudmove 600s linear infinite;
+}
+
+#section-0 .follow-head {
+  height: 126px;
+  background: url(../image/bg-1_yuqing.jpg);
+}
+
+.hill-2 {
+  width: 63px;
+  height: 78px;
+  background: url(../image/hill_2_yuqing.png);
+  right: 288px;
+  top: -13px;
+}
+
+.hill-3 {
+  width: 260px;
+  height: 175px;
+  background: url(../image/hill_3_yuqing.png);
+  right: -129px;
+  top: -47px;
+}
+
+.hill-1 {
+  width: 265px;
+  height: 175px;
+  background: url(../image/hill_1_yuqing.png);
+  left: -182px;
+  top: -50px;
+}
+
+.active .ship {
+  left: 140px;
+}
+
+.ship {
+  width: 242px;
+  height: 228px;
+  background: url(../image/ship_yuqing.png);
+  left: 100px;
+  top: -191px;
+}
+
+.launch {
+  width: 501px;
+  height: 158px;
+  background: url(../image/launch_yuqing.png);
+  left: 0;
+  top: -210px;
+}
+
+.flight {
+  width: 119px;
+  height: 78px;
+  background: url(../image/flight_yuqing.png);
+  left: 295px;
+  top: -236px;
+}
+
+.active .flight {
+  animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0% {
+    top: -220px;
+  }
+  50% {
+    top: -240px;
+  }
+  100% {
+    top: -220px;
+  }
+}
+
+@keyframes arrowgo {
+  0% {
+    opacity: 1;
+    transform-origin: center center;
+    transform: translate(-50%, 0);
+    bottom: 42px;
+  }
+  50% {
+    opacity: .5;
+    transform-origin: center center;
+    transform: translate(-50%, 0);
+    bottom: 36px;
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center center;
+    transform: translate(-50%, 0);
+    bottom: 42px;
+  }
+}
+
+.arrowgo {
+  bottom: 42px;
+  animation: arrowgo 1s infinite steps(10, end);
+}
+
+.btn-arrow {
+  display: block;
+  width: 30px;
+  height: 26px;
+  background: url(../image/arrow_yuqing.png);
+  position: absolute;
+  left: 485px;
+  bottom: 42px;
+}
+
+.hill {
+  position: absolute;
+  transition: all .5s ease-out .3s;
+}
+
+.active .title-area-1 {
+  top: -100px;
+  left: 20px;
+}
+
+.active .title-area {
+  opacity: 1;
+}
+
+.title-area-1 {
+  top: -100px;
+  left: -30px;
+}
+
+.title-area {
+  position: absolute;
+  opacity: 0;
+}
+
+.title-area {
+  position: absolute;
+  transition: all .5s ease-out .3s;
+}
+
+.section .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 500px;
+}
+
+#section-1 .title h3 {
+  background: url(../image/h_lingxian_yuqing.png) no-repeat;
+}
+
+.section .title h3 {
+  width: 66px;
+  height: 126px;
+  text-indent: -9999em;
+  float: left;
+}
+
+.section .title .text {
+  margin-left: 86px;
+  margin-top: 8px;
+}
+
+.section .title .text h4 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 48px;
+  margin-bottom: 6px;
+}
+
+.section .title .text p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  opacity: .8;
+}
+
+.lingxian {
+  animation: xuanzhuan 2s infinite;
+}
+
+@keyframes xuanzhuan {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.active .brain {
+  right: 26px;
+  opacity: 1;
+}
+
+.brain {
+  width: 444px;
+  height: 427px;
+  background: url(../image/brain_yuqing.png);
+  right: -14px;
+  top: -200px;
+  opacity: 0;
+}
+
+#section-1 .square {
+  bottom: 0;
+}
+
+.section .square {
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+}
+
+#section-1 .square-1, #section-1 .square-3, #section-1 .square-4, #section-1 .square-5 {
+  width: 44px;
+  height: 44px;
+}
+
+#section-1 .square-1 {
+  background: #35b568;
+  left: 70px;
+}
+
+#section-1 .square-2 {
+  background: #43cd61;
+  left: 158px;
+}
+
+#section-1 .square-3 {
+  background: #52b121;
+  left: 246px;
+}
+
+#section-1 .square-4 {
+  background: #22d499;
+  right: 328px;
+}
+
+#section-1 .square-5 {
+  background: #4fed18;
+  right: 240px;
+}
+
+#section-2 .square-1 {
+  background: #33bb9a;
+  left: 70px;
+  top: 60px;
+}
+
+#section-2 .square-2 {
+  background: #29a2b8;
+  left: -18px;
+  top: 148px;
+}
+
+#section-2 .square-3 {
+  background: #60cf6e;
+  left: 158px;
+  top: 148px;
+}
+
+#section-2 .square-4 {
+  background: #8ae75a;
+  left: 70px;
+  top: 236px;
+  width: 176px;
+  height: 176px;
+  background-image: url(../image/square_yuqing.jpg);
+}
+
+#section-2 .square-5 {
+  background: #33bb9a;
+  left: 246px;
+  top: 236px;
+}
+
+#section-2 .follow-head {
+  height: 138px;
+  background: transparent url(../image/bg-3-head_yuqing.png);
+}
+
+.active .title-area-2 {
+  top: -121px;
+  left: 58px;
+}
+
+.title-area-2 {
+  top: -121px;
+  left: 8px;
+}
+
+#section-2 .title h3 {
+  background: url(../image/h_quanmian_yuqing.png) no-repeat;
+}
+
+.active .allside {
+  right: 32px;
+  opacity: 1;
+}
+
+.allside {
+  width: 444px;
+  height: 330px;
+  background: url(../image/allside_yuqing.png);
+  right: 2px;
+  top: -120px;
+  opacity: 0;
+}
+
+.copy {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+
+.copy a {
+  color: #fff;
+}
+
+.active .title-area-3 {
+  top: -140px;
+  left: 82px;
+}
+
+.title-area-3 {
+  top: -140px;
+  left: 32px;
+}
+
+.title-area-3 .bubble {
+  left: -36px;
+  top: -56px;
+  width: 275px;
+  height: 245px;
+  background: url(../image/bubble_yuqing.png);
+}
+
+.active .stat {
+  right: 80px;
+  opacity: 1;
+}
+
+.stat {
+  width: 603px;
+  height: 361px;
+  background: url(../image/stat_yuqing.png);
+  right: 50px;
+  top: -160px;
+  opacity: 0;
+}
+
+#section-3 .title h3 {
+  background: url(../image/h_zhuanye_yuqing.png) no-repeat;
+}
+
+#fp-nav {
+  opacity: 0.5;
+}
+
+/*登录界面*/
+#logining {
+  background: #4ebffc;
+}
+
+.login-area {
+  height: 300px;
+  width: 340px;
+  border-radius: 5px;
+  background: #4ebffc;
+  position: absolute;
+  right: 0;
+  top: -198px;
+}
+
+#logining .logining {
+  width: auto;
+  position: relative;
+}
+
+#logining .logining form {
+  background: transparent;
+  padding-top: 26px;
+}
+
+.uc-common-login .login-info {
+  padding: 0 20px;
+}
+
+#login .login-info .account, #login .login-info .password {
+  width: 299px;
+  border: 0;
+}
+
+.uc-common-login .login-info .account, .uc-common-login .login-info .password {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #bdc7d3;
+  width: 270px;
+  height: 40px;
+  background: #fff;
+}
+
+.uc-common-login .login-info .account input, .uc-common-login .login-info .password input, .uc-common-login .login-info .account .safe-input, .uc-common-login .login-info .password .safe-input {
+  width: 223px;
+  border: 0;
+  outline: none;
+  padding: 9px;
+  height: 20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.uc-common-login .error {
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #f28281;
+  visibility: hidden;
+  font-size: 13px;
+  max-width: 270px;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  display: block;
+  margin: 0;
+  text-align: left;
+}
+
+.uc-common-login .login-info .account span, .uc-common-login .login-info .password span {
+  background: url("../image/icons.png") no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: 12px 3px 0 10px;
+}
+
+.uc-common-login .login-info .account span, .uc-common-login .login-info .password span, .uc-common-login .login-info .account input, .uc-common-login .login-info .password input, .uc-common-login .login-info .account .safe-input, .uc-common-login .login-info .password .safe-input {
+  float: left;
+}
+
+.uc-common-login .login-info .account span {
+  background-position: -124px -12px;
+}
+
+.uc-common-login .login-info .password span {
+  background-position: -140px -12px;
+}
+
+.uc-common-login .login-info .token:before, .uc-common-login .login-info .token:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.uc-common-login .login-info .token:after {
+  clear: both;
+}
+
+.uc-common-login .login-info .token:before, .uc-common-login .login-info .token:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#logining .login-info .token input {
+  border: 0;
+}
+
+#logining .login-info .token input {
+  width: 122px;
+}
+
+#logining .login-info .token img {
+  border: 0;
+  opacity: .6;
+}
+
+.uc-common-login .login-info .token img {
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  margin-left: 10px;
+  width: 99px;
+  height: 39px;
+}
+
+.uc-common-login .login-info .token input {
+  border: 0;
+  outline: none;
+  border: 1px solid #bdc7d3;
+  padding: 9px;
+  width: 90px;
+  height: 20px;
+  background: #fff;
+}
+
+.uc-common-login .login-info .token input, .uc-common-login .login-info .token img, .uc-common-login .login-info .token a {
+  float: left;
+}
+
+#logining a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#logining a {
+  color: #fff;
+}
+
+.uc-common-login .login-info .token a {
+  margin: 10px 0 0 10px;
+  font-size: 12px;
+}
+
+#logining .login-action {
+  border: 0;
+  background: 0 0;
+  padding-top: 0;
+}
+
+#logining .login-action .submit {
+  border: 0;
+  background: #ffd850;
+  color: #5c4c12;
+  border-radius: 2px;
+  width: 299px;
+}
+
+.uc-common-login .login-action .submit {
+  margin-top: 12px;
+  width: 270px;
+  display: block;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 35px;
+  color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.uc-common-login .login-action {
+  padding: 0 20px;
+}
+
+.uc-common-login .login-action .other {
+  margin: 12px 0 8px;
+  font-size: 12px;
+  color: #9dbcdb;
+}
+
+.uc-common-login .fl {
+  float: left;
+}
+
+.uc-common-login .fr {
+  float: right;
+}
+
+.login-action span {
+  vertical-align: top;
+}
+
+.uc-common-login .login-action span {
+  display: inline-block;
+  width: 15px;
+  height: 17px;
+  background: url("../image/icons.png") no-repeat -203px -75px;
+  margin: 2px 4px 0 0;
+}
